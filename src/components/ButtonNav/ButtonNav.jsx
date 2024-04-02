@@ -1,6 +1,6 @@
 import { Link } from 'react-router-dom';
 import './ButtonNav.scss';
-import arrow from '../../img/ico-shape.svg'
+import {ReactComponent as ArrowIcon} from '../../img/ico-shape.svg';
 
 export const ButtonNav = ({ title, to }) => {
   return (
@@ -13,7 +13,7 @@ export const ButtonNav = ({ title, to }) => {
         to={to}
       >
         {title}
-        <img src={arrow} alt="arrow_right" className="buttonNav__arrow" />
+        <ArrowIcon className="buttonNav__arrow" />
       </Link>
       
     </button>

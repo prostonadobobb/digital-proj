@@ -3,7 +3,6 @@ import './Tasks.scss';
 export const Tasks = () => {
   return (
     <section className="tasks">
-      <div className="container">
         <div className="tasks__title">
           Основні задачі
         </div>
@@ -15,7 +14,6 @@ export const Tasks = () => {
             <p className="tasks__task--text">Постійно вдосконалювати якість послуг шляхом навчання персоналу, закупівлі нового обладнання та посиленої реклами на ринку</p>
           </div>
         </div>
-      </div>
     </section>
   );
 };

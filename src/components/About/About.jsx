@@ -8,9 +8,7 @@ export const About = () => {
 
   return (
     <section className="about">
-      <div className="container">
         <div className="about__container">
-
           <div className="about__rectangle">
             <div className="about__rectangle--left">
               <img src={rectangle_1} alt="Image_1" />
@@ -30,9 +28,7 @@ export const About = () => {
             </p>
             <ButtonNav title={'читати'} to={'contacts'} />
           </div>
-
         </div>
-      </div>
     </section>
   );
 }

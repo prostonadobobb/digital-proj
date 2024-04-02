@@ -8,6 +8,7 @@ const images = require.context('../../../public/img/SliderImg', false, /\.(png|j
 
 export const HomeSlider = () => {
   const imagePaths = images.keys().map(imagePath => imagePath.substring(1));
+  const BASE_URL = 'img/SliderImg';
   const [currentIndex, setCurrentIndex] = useState(0);
 
   const goToPreviousSlide = () => {
@@ -28,10 +29,6 @@ export const HomeSlider = () => {
       clearInterval(intervalId); 
     };
   }, [currentIndex]);
-
-  const BASE_URL = 'img/SliderImg';
-  
-  console.log(imagePaths.length - 1);
 
   return (
     <section className="slider">
