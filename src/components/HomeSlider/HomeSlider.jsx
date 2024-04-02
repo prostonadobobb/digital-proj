@@ -10,16 +10,21 @@ export const HomeSlider = () => {
   const imagePaths = images.keys().map(imagePath => imagePath.substring(1));
   const BASE_URL = 'img/SliderImg';
   const [currentIndex, setCurrentIndex] = useState(0);
-
+  
   const goToPreviousSlide = () => {
     setCurrentIndex(prevIndex => (
       prevIndex === 0 ? 
         imagePaths.length - 1 : 
-        prevIndex - 1));
+        prevIndex - 1
+    ));
   };
 
   const goToNextSlide = () => {
-    setCurrentIndex(prevIndex => (prevIndex === imagePaths.length - 1 ? 0 : prevIndex + 1));
+    setCurrentIndex(prevIndex => (
+      prevIndex === imagePaths.length - 1 ?
+       0 : 
+       prevIndex + 1
+    ));
   };
 
   useEffect(() => {
@@ -59,11 +64,17 @@ export const HomeSlider = () => {
       </div>
 
       <div className="slider__photo">
-        <img 
-          className="slider__photo--img"
-          src={`${BASE_URL}${imagePaths[currentIndex]}`} 
-          alt={`Image_${imagePaths}`} 
-        />
+      {imagePaths.map((imagePath, index) => (
+          
+          <img 
+            key={index}
+            className={`slider__photo--img ${index === currentIndex ? 'visible' : 'hidden'}`}
+            src={`${BASE_URL}${imagePath}`} 
+            alt={`Image_${imagePath}`} 
+          />
+
+        ))}
+        
         <ButtonNav title={'подивитись'} to={'projects'}/>
       </div>
 

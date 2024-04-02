@@ -18,7 +18,18 @@
       height: 100%;
       object-fit: cover;
       transition: opacity 0.5s ease;
+      position: absolute;
+
+      &.hidden {
+        opacity: 0; /* Зображення зникає */
+      }
+      
+      &.visible {
+        opacity: 1; /* Зображення з'являється */
+      }
     }
+
+
 
     & button {
       position: absolute;
