@@ -1,0 +1,48 @@
+.about {
+  font-family: 'TTHoves-Light', sans-serif;
+  margin: 120px 0;
+
+  &__container {
+    display: flex;
+    gap: 30px;
+    background: #FBFBFB;
+    padding: 30px 70px 30px 100px;
+  }
+
+  &__rectangle {
+    display: flex;
+    gap: 30px;
+
+    & img {
+      width: 100%;
+    }
+
+    &--left {
+      display: flex;
+      gap: 30px;
+      flex-direction: column;
+      margin-bottom: -60px;
+    }
+
+    &--right {
+      flex-grow: 1;
+      margin-top: 30px;
+    }
+  }
+
+  &__description {
+    max-width: 400px;
+    line-height: 1.5;
+
+    &--title {  
+      font-size: 64px;
+      font-weight: normal;
+      color: #BDBDBD;
+    }
+
+    &--text {
+      font-size: 16px;
+      color: #000;
+    }
+  }
+}
