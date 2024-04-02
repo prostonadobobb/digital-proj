@@ -2,6 +2,7 @@
 import { useEffect, useState } from 'react';
 import './HomeSlider.scss';
 import arrow from '../../img/ico-shape.svg';
+import { ButtonNav } from '../ButtonNav/ButtonNav';
 
 const images = require.context('../../../public/img/SliderImg', false, /\.(png|jpe?g|svg)$/);
 
@@ -62,9 +63,11 @@ export const HomeSlider = () => {
 
       <div className="slider__photo">
         <img 
+          className="slider__photo--img"
           src={`${BASE_URL}${imagePaths[currentIndex]}`} 
           alt={`Image_${imagePaths}`} 
         />
+        <ButtonNav title={'подивитись'} to={'projects'}/>
       </div>
 
     </section>

@@ -2,24 +2,27 @@
   background-color: #fff;
   border: none;
   transition: 0.5s ease;
+  width: max-content;
  
   &:hover {
     background-color: #F2F2F2;
   }
 
   &__link {
+    font-family: 'TTHoves-Regular', sans-serif;
     display: block;
     text-decoration: none;
     text-transform: uppercase;
     letter-spacing: 2px;
     color: #333;
     font-size: 12px;
-    font-weight: bold;
     line-height: 1;
     padding: 24px 65px;  
   }
 
   &__arrow {
+    width: 17px;
+    height: 8px;
     margin-left: 15px;
   }
 }

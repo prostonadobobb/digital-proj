@@ -32,12 +32,16 @@
 
   &__description {
     max-width: 400px;
+    display: flex;
     line-height: 1.5;
+    flex-direction: column;
+    justify-content: space-between;
 
     &--title {  
       font-size: 64px;
       font-weight: normal;
       color: #BDBDBD;
+      line-height: 1;
     }
 
     &--text {
