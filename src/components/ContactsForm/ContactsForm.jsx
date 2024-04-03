@@ -1,5 +1,5 @@
 import './ContactsForm.scss';
-import palceholder_img from '../../img/placeholder_img.png';
+import palceholder_img from '../../img/image_12.png';
 import { Form, FormGroup, FormControl, FormCheck } from 'react-bootstrap';
 import { useForm } from 'react-hook-form';
 import React from 'react';
@@ -162,6 +162,5 @@ export const ContactsForm = () => {
       </div>
     </section>
   );
-  
 };
 

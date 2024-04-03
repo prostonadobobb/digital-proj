@@ -5,10 +5,10 @@
   align-items: center;
   text-transform: uppercase;
   letter-spacing: 2px;
+  border: 1px solid #F2F2F2;
+  border-radius: 3px;
   background-color: #333;
   color: #fff;
-  border: 1px solid #F2F2F2;
-  border-radius: 1px;
   line-height: 1;
   padding: 24px 65px;
   width: 260px;
@@ -16,8 +16,8 @@
 
   &:hover {
     background-color: #F2F2F2;
-    border: 1px solid #F2F2F2;
     color: #333;
+    border: 1px solid #F2F2F2;
     width: 100%;
     & path {
       fill: #333;

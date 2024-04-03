@@ -1,0 +1,71 @@
+.footer {
+  margin-top: 120px;
+  background: #2C2C2C;
+
+  & li {
+    list-style-type: none;
+  }
+
+  &__container {
+    display: flex;
+    justify-content: space-between;
+    padding: 60px 0;
+  }
+
+  &__title {
+    font-family: 'TTHoves-Bold', sans-serif;
+    font-weight: bold;
+    font-size: 16px;
+    color: #fff;
+    margin-bottom: 25px;
+  }
+
+   &__list {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 200px;
+
+    &--item {
+      font-family: 'TTHoves-Medium', sans-serif;
+      color: #fff;
+      font-size: 14px;
+    }
+  }
+  &__social {
+    
+    &--icons {
+      display: flex;
+      & li {
+        height: 20px;
+        width: 20px;
+      }
+
+      li + li {
+        margin-left: 40px;
+      }
+    }
+
+    &--face {
+      background: url(../../img/face.svg) no-repeat center;
+    }
+    &--twit {
+      background: url(../../img/twit.svg) no-repeat center;
+    }
+    &--linked {
+      background: url(../../img/Linked.svg) no-repeat center;
+    }
+    &--pint {
+      background: url(../../img/pini.svg) no-repeat center;
+    }
+  }  
+
+  &__privacy {
+    font-family: "Open-Sans", sans-serif;
+    text-align: center;
+    font-size: 12px;
+    color: #C8C8C8;
+    padding: 25px 0;
+    border-top: 1px solid #fff;
+  }
+}
