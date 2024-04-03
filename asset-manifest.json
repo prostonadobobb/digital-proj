@@ -1,12 +1,13 @@
 {
   "files": {
-    "main.css": "./static/css/main.5f7a69f0.css",
-    "main.js": "./static/js/main.f753058f.js",
+    "main.css": "./static/css/main.a2b49db6.css",
+    "main.js": "./static/js/main.12d98372.js",
     "static/media/rectangle_2.png": "./static/media/rectangle_2.ea761ec266a09e73efea.png",
     "static/media/rectangle_3.png": "./static/media/rectangle_3.5508f88619b85e5a0923.png",
     "static/media/rectangle_1.png": "./static/media/rectangle_1.d15cb5f65871b943b7b2.png",
     "static/media/image_4.png": "./static/media/image_4.6083229f60d511200955.png",
     "static/media/image_2.png": "./static/media/image_2.f823937eac9f2b1cfc15.png",
+    "static/media/placeholder_img.png": "./static/media/placeholder_img.22f11717bd11a31749ba.png",
     "static/media/image_5.png": "./static/media/image_5.c7e064488e9672f7f057.png",
     "static/media/image_3.png": "./static/media/image_3.33ee686e2e44d8b9f664.png",
     "static/media/Rectangle_2.png": "./static/media/Rectangle_2.3c766f1a53241e8dd7d6.png",
@@ -20,12 +21,13 @@
     "static/media/TTHoves-Regular.woff2": "./static/media/TTHoves-Regular.2cb6726809285d301e2b.woff2",
     "static/media/Rectangle_3.png": "./static/media/Rectangle_3.4bd631ccf1cb0b635ff2.png",
     "static/media/ico-shape.svg": "./static/media/ico-shape.4a9add6915abdffb28043d3a0cca7bf1.svg",
+    "static/media/Path_2.svg": "./static/media/Path_2.7c0ffd79989050365343.svg",
     "index.html": "./index.html",
-    "main.5f7a69f0.css.map": "./static/css/main.5f7a69f0.css.map",
-    "main.f753058f.js.map": "./static/js/main.f753058f.js.map"
+    "main.a2b49db6.css.map": "./static/css/main.a2b49db6.css.map",
+    "main.12d98372.js.map": "./static/js/main.12d98372.js.map"
   },
   "entrypoints": [
-    "static/css/main.5f7a69f0.css",
-    "static/js/main.f753058f.js"
+    "static/css/main.a2b49db6.css",
+    "static/js/main.12d98372.js"
   ]
 }
