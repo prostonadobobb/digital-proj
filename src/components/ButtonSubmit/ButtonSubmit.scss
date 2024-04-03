@@ -1,0 +1,37 @@
+.buttonSubmit {
+  font-family: 'TTHoves-Regular', sans-serif;
+  font-size: 12px;
+  display: flex;
+  align-items: center;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  background-color: #333;
+  color: #fff;
+  border: 1px solid #F2F2F2;
+  border-radius: 1px;
+  line-height: 1;
+  padding: 24px 65px;
+  width: 260px;
+  transition: width 0.3s linear, background-color 0.3s linear, border-color 0.3s linear, color 0.3s linear;
+
+  &:hover {
+    background-color: #F2F2F2;
+    border: 1px solid #F2F2F2;
+    color: #333;
+    width: 100%;
+    & path {
+      fill: #333;
+    }
+  }
+  
+  &__arrow {    
+    width: 17px;
+    height: 8px;
+    margin-left: 15px;
+
+    & path {
+      fill: white;
+      transition: fill 0.3s linear;
+    }
+  }
+}

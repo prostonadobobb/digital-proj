@@ -37,7 +37,6 @@ export const HomeSlider = () => {
 
   return (
     <section className="slider">
-
       <div className="slider__shelf">
         <h1 className="slider__title">project<span><br />home</span></h1>
 
@@ -53,10 +52,8 @@ export const HomeSlider = () => {
         <div className="slider__counter">
           <div className="slider__counter--number">
             {`0${currentIndex + 1}`} 
-          </div>
-          
+          </div>         
           <span>/</span> 
-
           <div className="slider__counter--number">
             {`0${imagePaths.length}`} 
           </div>
@@ -64,20 +61,17 @@ export const HomeSlider = () => {
       </div>
 
       <div className="slider__photo">
-      {imagePaths.map((imagePath, index) => (
-          
+      {imagePaths.map((imagePath, index) => (         
           <img 
             key={index}
             className={`slider__photo--img ${index === currentIndex ? 'visible' : 'hidden'}`}
             src={`${BASE_URL}${imagePath}`} 
             alt={`Image_${imagePath}`} 
           />
-
         ))}
         
         <ButtonNav title={'подивитись'} to={'projects'}/>
       </div>
-
     </section>
   );
 };

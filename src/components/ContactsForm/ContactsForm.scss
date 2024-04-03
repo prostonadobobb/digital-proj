@@ -1,0 +1,94 @@
+@import '~bootstrap/scss/bootstrap';
+
+.callback {
+  padding-top: 120px;
+
+  &__title {
+    font-family: 'TTHoves-Light', sans-serif;
+    font-size: 64px;
+    color: #BDBDBD;
+  }
+
+  &__container {
+    display: flex;
+    margin-top: 25px;
+    gap: 30px;
+  }
+
+  &__placeholder {
+    padding-bottom: 140px;
+
+    & img {
+      height: 100%;
+      width: 100%;
+      object-fit: cover;
+    }
+  }
+}
+
+.form {
+  min-width: 400px;
+
+  &__group {
+    font-family: 'TTHoves-Regular', sans-serif;
+    font-size: 14px;
+
+    &--text {
+      height: 18px;
+      display: flex;
+      align-items: center;
+
+      & > * {
+        margin: 0;
+        line-height: 1;
+        color: red;
+      }
+    }
+
+    & textarea {
+      height: 150px;
+      margin-top: 18px;
+      resize: none;
+    }
+  }
+
+  &-control {
+    font-family: inherit;
+    font-size: 14px;
+    padding: 15px 21px;
+    background: #F3F3F3;
+    border-style: none; 
+
+    &:focus {
+      box-shadow: 0 0 0 0.1rem grey;
+    }
+  }
+}
+
+.form-check {
+  display: flex;
+  gap: 10px;
+  cursor: pointer;
+
+  &-input:checked {
+    background-color: #F3F3F3;
+    border-color: #F3F3F3;
+
+    &[type=checkbox] {
+      --bs-form-check-bg-image: url(../../img/Path_2.svg);
+    }
+  }
+
+  &-input[type=checkbox] {
+    width: 24px;
+    height: 24px;
+    border-radius: 0; /* Знімаємо круглі кути, які за замовчуванням */
+    background-color: #F3F3F3;
+  
+    &:focus { 
+      box-shadow: 0 0 0 0.1rem grey;
+      border: none;
+      box-shadow: none;
+    }
+  }
+}
