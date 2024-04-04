@@ -92,7 +92,8 @@
 
 @media only screen and (max-width: 525px) {
   .footer {
-
+    margin-top: 60px;
+    
     &__container {
       grid-template-columns: 1fr 1fr;
     }
