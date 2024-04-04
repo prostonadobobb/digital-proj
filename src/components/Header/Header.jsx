@@ -1,8 +1,13 @@
 import { NavLink } from 'react-router-dom';
 import './Header.scss';
 import logo from '../../img/Logo.svg'
+import { useState } from 'react';
+import classNames from 'classnames';
 
 export const Header = () => {
+  const [openBurger, setOpenBurger] = useState(false);
+
+
   return (
     <section className="header">
       <div className="container">
@@ -10,8 +15,17 @@ export const Header = () => {
           <NavLink to='/' className="header__logo">
             <img src={logo} alt="header-logo" className="header__logo-img" />
           </NavLink>
+          
+          <div 
+            className={classNames('header__burger', {'active' : openBurger})}
+            onClick={() => setOpenBurger(!openBurger)}
+          >
+            <span></span>
+            <span></span>
+            <span></span>
+          </div>
 
-          <nav  className="navbar">
+          <nav  className={classNames('navbar', {'active' : openBurger})}>
             <div className="navbar__list">
               <NavLink to="/" className="navbar__link">головна</NavLink>
               <NavLink to="gallery" className="navbar__link">галерея</NavLink>
