@@ -1,0 +1,20 @@
+.plug {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 80vh; 
+
+  &__container {
+    background: #F2F2F2;
+    border-radius: 10px;
+    border: 1px solid #c9c9c9;
+    width: 100%;
+    
+    &--text {
+      font-size: 32px;
+      text-align: center;
+      padding: 50px;
+      color: #333;
+    }
+  }
+}

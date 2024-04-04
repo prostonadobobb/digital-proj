@@ -1,5 +1,6 @@
 import './Footer.scss';
 import logo from '../../img/Logo_footer.svg';
+import { Link } from 'react-router-dom';
 
 export const Footer = () => {
   return (
@@ -16,11 +17,11 @@ export const Footer = () => {
             Інформація
           </div>
           <ul className="footer__list">
-            <li className="footer__list--item">Головна</li>
-            <li className="footer__list--item">Галерея</li>
-            <li className="footer__list--item">Проекти</li>
-            <li className="footer__list--item">Сертифікати</li>
-            <li className="footer__list--item">Контакти</li>
+            <Link to="/" className="footer__list--item">Головна</Link>
+            <Link to="gallery" className="footer__list--item">Галерея</Link>
+            <Link to="projects" className="footer__list--item">Проекти</Link>
+            <Link to="certificates" className="footer__list--item">Сертифікати</Link>
+            <Link to="contacts" className="footer__list--item">Контакти</Link>
           </ul>
         </div>
 
@@ -32,8 +33,8 @@ export const Footer = () => {
             <li className="footer__list--item">
               100000, Республіка  Смертьворогам, <br /> м. Бандери, вул. Байрактарна 24
             </li>
-            <li className="footer__list--item">+38 (000) 000 00 00</li>
-            <li className="footer__list--item">mail@gmail.com</li>
+            <Link to="tel:+380000000000" className="footer__list--item">+38 (000) 000 00 00</Link>
+            <Link to="mailto: mail@gmail.com" className="footer__list--item">mail@gmail.com</Link>
           </ul>
         </div>
 
@@ -42,10 +43,10 @@ export const Footer = () => {
             Соціальні мережі
           </div>
           <ul className="footer__social--icons">
-            <li className="footer__social--face" />
-            <li className="footer__social--twit" />
-            <li className="footer__social--linked" />
-            <li className="footer__social--pint" />
+            <Link to="/" className="footer__social--twit" />
+            <Link to="/" className="footer__social--linked" />
+            <Link to="/" className="footer__social--pint" />
+            <Link to="/" className="footer__social--face" />
           </ul>
         </div>
         </div>
