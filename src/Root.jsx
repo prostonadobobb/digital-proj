@@ -1,4 +1,4 @@
-import { Routes, Route } from 'react-router-dom';
+import { Routes, Route, useLocation } from 'react-router-dom';
 
 import { HomePage } from './pages/HomePage/HomePage';
 import App from './App';
@@ -6,22 +6,23 @@ import { GalleryPage } from './pages/GalleryPage/GalleryPage';
 import { ProjectPage } from './pages/ProjectPage/ProjectPage';
 import { CertificatePage } from './pages/CertificatePage/CertificatePage';
 import { ContactsPage } from './pages/ContactsPage/ContactsPage';
+import { useEffect } from 'react';
 
 export const Root = () => {
 
-  // const ScrollToTopOnRouteChange = () => {
-  //   const { pathname } = useLocation();
+  const ScrollToTopOnRouteChange = () => {
+    const { pathname } = useLocation();
   
-  //   useEffect(() => {
-  //     window.scrollTo(0, 0);
-  //   }, [pathname]);
+    useEffect(() => {
+      window.scrollTo(0, 0);
+    }, [pathname]);
   
-  //   return null;
-  // };
+    return null;
+  };
 
   return ( 
     <>
-      {/* <ScrollToTopOnRouteChange />   */}
+      <ScrollToTopOnRouteChange />
       <Routes> 
         <Route path='/' element={<App />}>
           <Route index element={<HomePage />} />
