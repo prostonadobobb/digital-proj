@@ -1,12 +1,27 @@
 import { NavLink } from 'react-router-dom';
 import './Header.scss';
 import logo from '../../img/Logo.svg'
-import { useState } from 'react';
+import { useCallback, useEffect, useRef, useState } from 'react';
 import classNames from 'classnames';
 
 export const Header = () => {
   const [openBurger, setOpenBurger] = useState(false);
 
+  const navRef = useRef(null);
+
+  const handleClickOutside = useCallback((e) => {
+    if (!navRef.current.contains(e.target)) {
+      setOpenBurger(false);
+    }
+  }, [navRef, setOpenBurger]);
+  
+  useEffect(() => {
+    document.addEventListener('click', handleClickOutside);
+
+    return () => {
+      document.removeEventListener('click', handleClickOutside);
+    };
+  }, [handleClickOutside]);
 
   return (
     <section className="header">
@@ -19,6 +34,7 @@ export const Header = () => {
           <div 
             className={classNames('header__burger', {'active' : openBurger})}
             onClick={() => setOpenBurger(!openBurger)}
+            ref={navRef}
           >
             <span></span>
             <span></span>

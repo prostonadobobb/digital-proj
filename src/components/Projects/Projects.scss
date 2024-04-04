@@ -4,6 +4,7 @@
   &__title {
     font-family: 'TTHoves-Light', sans-serif;
     font-size: 64px;
+    font-weight: normal;
     color: #BDBDBD;
   }
 
@@ -59,6 +60,26 @@
       & path {
         fill: #333;
       }
+    }
+  }
+}
+
+@media only screen and (max-width: 1024px) {
+  .projects {
+    &__container {
+      padding: 30px 0 75px;
+    }
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .projects {
+    &__title {
+      font-size: 34px;
+    }
+
+    &__row {
+      gap: 5px;
     }
   }
 }

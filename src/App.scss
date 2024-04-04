@@ -60,3 +60,10 @@ button {
   padding: 0 30px;
   max-width: 1230px;
 }
+
+
+@media only screen and (max-width: 1024px) {
+  .main {
+    margin-top: 105px;
+  }
+}

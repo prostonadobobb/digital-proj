@@ -10,7 +10,7 @@
 
   &__photo {
     position: relative;
-    width: 800px;
+    width: 100%;
     height: 700px;
     z-index: 10;
     
@@ -22,11 +22,11 @@
       position: absolute;
 
       &.hidden {
-        opacity: 0; /* Зображення зникає */
+        opacity: 0;
       }
       
       &.visible {
-        opacity: 1; /* Зображення з'являється */
+        opacity: 1;
       }
     }
 
@@ -119,15 +119,81 @@
     font-size: 24px;
     color: #BDBDBD;
 
-    &--number {
-      width: 30px;
-    }
+    // &--number {
+    //   width: 30px;
+    // }
 
     & span {
       margin: 0 25px;
-      font-size: 35px;
+      font-size: 50px;
       transform: rotate(20deg);
       color: #E0E0E0;
     }
+  }
+}
+
+@media only screen and (max-width: 1024px) {
+  .slider {
+    flex-direction: column-reverse;
+    align-items: flex-start;
+
+    &__photo {
+      height: 400px;
+    }
+
+    &__shelf {
+      display: flex;
+      gap: 30px ;
+      margin: 0;
+    }
+
+    &__control {
+      margin: 0;
+    }
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .slider {
+    &__title {
+      font-size: 34px;
+    }
+
+    &__control {
+      display: flex;
+      flex-direction: column;
+    }
+
+    &__counter {
+      font-size: 18px;
+
+      & span {
+        font-size: 28px;
+        margin: 0 12px;
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 425px) {
+  .slider {
+    &__shelf {
+      gap: 20px;
+    }
+
+    &__controll--button {
+      margin: 0;
+    }
+
+    &__counter {
+      font-size: 14px;
+
+      & span {
+        transform: none;
+      margin: 0;
+      font-size: 20px;
+      }
+    }
+
   }
 }

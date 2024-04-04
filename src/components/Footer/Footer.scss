@@ -71,3 +71,34 @@
     border-top: 1px solid #fff;
   }
 }
+
+@media only screen and (max-width: 1024px) {
+  .footer {
+    &__container {
+      grid-template-columns: 1fr 1fr 1fr;
+      display: grid;
+      gap: 20px;
+    }
+
+    &__list {
+      height: 120px;
+    }
+
+    &__social {
+      display: none;
+    }
+  }
+}
+
+@media only screen and (max-width: 525px) {
+  .footer {
+
+    &__container {
+      grid-template-columns: 1fr 1fr;
+    }
+
+    &__logo {
+      display: none;
+    }
+  }
+}
